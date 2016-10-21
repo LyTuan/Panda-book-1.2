@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Panda Book</title>
+	<link rel="icon" type="img/png" href="img/icon-title.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styleShop.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/filter_sort_mb.css">
+</head>
+<body>
+	<div id="all">
+		<header>
+			<div class="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="pull-right">
+								
+									<ul class="list-unstyled top-links">
+					
+										<li>
+											<a href="#" onclick="document.getElementById('idlogin').style.display='block';
+											document.getElementById('idmodal').style.display='block'">Đăng nhập</a>
+										</li>
+										<li><a href="#" onclick="document.getElementById('idregister').style.display='block';
+																document.getElementById('idmodal').style.display='block'">
+												Đăng ký
+											</a>
+										</li>
+
+									</ul>
+
+
+
+								<div id="idmodal" class="modal1">
+									<form id="idlogin" class="modal1-content animate" style="display: none;">
+											<div class="title-login">Đăng Nhập</div>
+												<input class="input-login" type="text" name="uname" placeholder="Email" required>
+												<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+												<a class="link-forgot-psw" href="">Quên mật khẩu?</a>
+												<button class="btn-login">Đăng Nhập</button>
+												<div class=text-register>
+														Bạn chưa có tài khoản? 
+													<a href="#" onclick="document.getElementById('idlogin').style.display='none';
+													document.getElementById('idregister').style.display='block'">Đăng ký</a>
+								</div>
+								</form>
+								<form id="idregister" class="modal1-content animate" style="display: none;">
+											<div class="title-login">Đăng Ký Tài Khoản</div>
+											<input class="input-login" type="text" name="uname" placeholder="Email" required>
+											<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+											<input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
+											<div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+											<a href="">điều kiện sử dụng của Panda Book.</a>
+											</div>
+											<button class="btn-login">Đăng Ký</button>
+								</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end .top-bar-->
+			
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-sm-4 ">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search for...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+									</span>
+								</div><!-- /input-group -->
+						</div>
+
+						<div class="col-sm-4 ">
+							<div class="logo text-center">
+								<div><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="pull-right">
+									<div class="pull-right">
+				                  <a href="cart.html" class="btn-cart">
+				                  <span>1 sản phẩm</span>
+				                    <i class="glyphicon glyphicon-shopping-cart"></i>
+				                  </a>
+				                  <span>&nbsp;&nbsp;</span>
+				                  <a href="#" class="btn-cart">
+				                  <span>1 đánh giá</span>
+				                    <i class="glyphicon glyphicon-heart"></i>
+				                  </a>
+				            	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end .main-header-->
+
+			<div class="main-navbar">
+				<div class="container">
+					<div class="row">
+						 <ul class="nav nav-pills" data-spy="affix" data-offset-top="197">
+					        <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
+					        <li><a href="#">Diễn đàn</a></li>
+					        <li><a href="#">Tin tức</a></li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					          Sách UET
+					          <span ></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Công nghệ thông tin</a></li>
+					            <li><a href="#">Điện tử viễn thông</a></li>
+					            <li><a href="#">Khác</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">An toàn thông tin</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Cơ kỹ thuật</a></li>
+					          </ul>
+					        </li>
+					         <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					          Sách ngoái
+					          <span ></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Sách kỹ năng</a></li>
+					            <li><a href="#">Sách thiếu nhi</a></li>
+					            <li><a href="#">Khác</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Sách tâm lý</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Sách dạy con</a></li>
+					          </ul>
+					        </li>
+					      </ul>
+					</div>
+				</div>
+			</div> <!-- end .main-navbar -->
+		</header><!-- /header-->
+
+
+		<div class="content">
+	
+			<div class="search-container">
+				<div class="row">
+					<div class="search-info" style="float:left">
+			      		<span>169 kết quả được tìm thấy cho: <span class="keyword">tony 169 kết quả được tìm thấy cho </span></span>
+			    	</div>
+			        <div class="type-wrapper" align="right">
+			        	<span id="open-filter" class="show-1000 btn"><span class="glyphicon glyphicon-filter"></span> Bộ lọc</span>
+			        	<span id="open-sort-by" class="show-1000 btn"><span class="glyphicon glyphicon-sort"></span> Sắp xếp</span>
+			        	<div id="sort-type" class="sort-type overlay">
+			        		<div class="close-overlay show-1000"><span class="glyphicon glyphicon-remove close-icon"></span></div>
+			        		<span class="sort-by">Sắp xếp theo </span>
+			        		<select id="select-type">
+			        			<option>Độ liên quan</option>
+			        			<option>Tên sách</option>
+			        			<option>Giá cao đến thấp</option>
+			        			<option>Giá thấp đến cao</option>
+			        		</select>
+			        	</div>
+			        	<div class="view-type">
+			        		<a href="search-list.html" title="Danh sách"><span class="glyphicon glyphicon-th-list"></span></a>
+			        	</div>
+			        </div>
+			     </div>
+
+				<hr class="hr clearfix"/>
+				
+				<!-- search filter -->
+				<div id="filter" class="filter overlay">
+					<div class="close-overlay show-1000"><span class="glyphicon glyphicon-remove close-icon"></span></div>
+					<h3 class="text">Lọc kêt quả theo: </h3>
+					<div>
+						<h3>Thể loại</h3>
+						<ul>
+							<li><a href="#">Sách thiếu nhi (12)</a></li>
+							<li><a href="#">Tiểu thuyết (5)</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Nhà xuất bản</h3>
+						<ul>
+							<li><a href="#">NXB Kim đồng (69)</a></li>
+							<li><a href="#">NXB Giáo dục (34)</a></li>
+							<li><a href="#">NXB Thời đại (15)</a></li>
+							<li><a href="#">NXB Đại học Quốc gia Hà Nội (3)</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Thể loại</h3>
+						<ul>
+							<li><a href="#">Sách thiếu nhi (12)</a></li>
+							<li><a href="#">Tiểu thuyết (5)</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Tình trạng</h3>
+						<ul>
+							<li><a href="#">Đang hạ giá (11)</a></li>
+							<li><a href="#">Đang khuyến mại (8)</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Giá</h3>
+						<ul>
+							<li><a href="#">Dưới 50.000 <sup>đ</sup> (11)</a></li>
+							<li><a href="#">Từ 50.000 <sup>đ</sup> - 100.000 <sup>đ</sup> (11)</a></li>
+							<li><a href="#">Dưới 50.000 <sup>đ</sup> (11)</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end search filter-->
+				<div class="search-content grid-view">
+					<div class="item">
+						<div class="item-wrapper">
+							<div class="s-img">
+								<a href="">
+									<img src="img/tony.png" class="img-res" alt="Tony buổi sáng"/>
+								</a>
+							</div>
+							<div class="s-info">
+								<a href="#" class="title" title="Tên sách">Cà Phê Cùng Tony</a>
+								<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+								
+								<div class="price">
+									<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+									<span class="discount hidden-grid" title="Giảm giá">-20%</span>
+									<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+								</div>
+								
+								<p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có 	thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
+								
+								<div class="s-add-to-cart">
+									<a href="#">
+										<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-wrapper">
+							<div class="s-img">
+								<a href="">
+									<img src="img/tony.png" class="img-res" alt="Tony buổi sáng"/>
+								</a>
+							</div>
+							<div class="s-info">
+								<a href="#" class="title" title="Tên sách">Cà Phê Cùng Tony</a>
+								<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+								
+								<div class="price">
+									<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+									<span class="discount hidden-grid" title="Giảm giá">-20%</span>
+									<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+								</div>
+								
+								<p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có 	thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
+								
+								<div class="s-add-to-cart">
+									<a href="#">
+										<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-wrapper">
+							<div class="s-img">
+								<a href="">
+									<img src="img/tony.png" class="img-res" alt="Tony buổi sáng"/>
+								</a>
+								<span class="sale-img">-50%</span>
+							</div>
+							<div class="s-info">
+								<a href="#" class="title" title="Tên sách">Cà Phê Cùng Tony</a>
+								<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+								
+								<div class="price">
+									<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+									<span class="discount hidden-grid" title="Giảm giá">-20%</span>
+									<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+								</div>
+								
+								<p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có 	thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
+								
+								<div class="s-add-to-cart">
+									<a href="#">
+										<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-wrapper">
+							<div class="s-img">
+								<a href="">
+									<img src="img/tony.png" class="img-res" alt="Tony buổi sáng"/>
+								</a>
+							</div>
+							<div class="s-info">
+								<a href="#" class="title" title="Tên sách">Cà Phê Cùng Tony</a>
+								<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+								
+								<div class="price">
+									<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+									<span class="discount hidden-grid" title="Giảm giá">-20%</span>
+									<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+								</div>
+								
+								<p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có 	thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
+								
+								<div class="s-add-to-cart">
+									<a href="#">
+										<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-wrapper">
+							<div class="s-img">
+								<a href="">
+									<img src="img/tony.png" class="img-res" alt="Tony buổi sáng"/>
+								</a>
+							</div>
+							<div class="s-info">
+								<a href="#" class="title" title="Tên sách">Cà Phê Cùng Tony</a>
+								<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+								
+								<div class="price">
+									<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+									<span class="discount hidden-grid" title="Giảm giá">-20%</span>
+									<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+								</div>
+
+								<p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có 	thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
+								
+								<div class="s-add-to-cart">
+									<a href="#">
+										<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+				<div class="pages">
+		          	<ul class="pd-pagination">
+			            <li class="disabled"><a href="#">Trang trước</a></li>
+			            <li class="active"><a href="#">1</a></li>
+			            <li class="hidden-mb"><a href="#">2</a></li>
+			            <li class="hidden-mb"><a href="#">3</a></li>
+			            <li class="hidden-mb">...</li>
+			            <li class="hidden-mb"><a href="#">19</a></li>
+			            <li><a href="#">Trang tiếp</a></li>
+		          	</ul>
+		    	</div>
+
+			</div>	
+			<!-- end search container -->
+
+		</div>
+		<!-- end content -->
+
+
+		<footer class="footer">
+			<div class="footer-wrapper">
+				<div class="footer-widgets">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="widget">
+									<h4 class="widget-title">THÔNG TIN VỀ PANDABOOK</h4>
+									<div class="widget-content">
+										<p>Panda book là sản phẩm của nhóm panda</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="widget">
+									<h4 class="widget-title">HỖ TRỢ</h4>
+									<div class="widget-content">
+										<p>Địa chỉ: Số 144 - Xuân Thủy - Cầu Giấy - Hà nội</p>
+										<p>SĐT: 0969 699 9</p>
+										<p>Email: panda@panda.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="widget">
+									<h4 class="widget-title">FANPAGE</h4>
+									<ul class="list-socials">
+		                                    <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a>
+		                                    </li>
+		                            </ul>
+		                        </div>
+		                        <div class="widget">
+									<h4 class="widget-title">CHẤP NHẬN THANH TOÁN</h4>
+									<ul class="list-socials">
+		                                    <li><a href="#" title=""><i class="fa fa-cc-paypal"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-cc-visa"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-cc-jcb"></i></a>
+		                                    </li>
+		                                    <li><a href="#" title=""><i class="fa fa-cc-discover"></i></a>
+		                                    </li>
+		                            </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- /.footer-widget -->
+
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-10 copyright">
+		                        <span>Copyright &copy; 2016 Panda Book - All Rights Reserved.</span>
+		                    </div>
+		                    <div class="col-sm-2 language dropup">
+		                    	<span>Language: </span>
+		                    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">VN <span class="caret"></span></a>
+				          		<ul class="dropdown-menu drop-menu">
+				            		<li><a href="#">English</a></li>
+									<li><a href="#">Vietnamese</a></li>
+				            		<li><a href="#">Japaniese</a></li>
+				          		</ul>
+		                    </div>
+		                </div>
+					</div>
+				</div> <!-- /.footer-copyright -->
+				
+			</div> <!-- /.footer-wrapper -->
+			
+		</footer> <!-- /footer -->
+
+	</div>
+</body>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scriptShop.js"></script>
+	<script>
+	
+		function openOverlay(overlay) {
+			document.getElementById("all").style.height = "0px";
+			document.body.style.overflow = "hidden";
+			overlay.style.display = "block";
+		    overlay.style.height = "100%";
+		    overlay.style.minHeight = "100%";
+		}
+		
+		function closeoOverlay(overlay) {
+			document.getElementById("all").style.height = "auto";
+		    overlay.style.minHeight = "0%";
+		    overlay.style.height = "0%";
+		    document.body.style.overflow = "auto";
+		}
+
+		function closeFilter() {
+		    var filter = document.getElementById("filter");
+		    closeoOverlay(filter);
+		}
+
+		function openFilter() {
+			var filter = document.getElementById("filter");
+			openOverlay(filter);
+
+			var options = filter.getElementsByTagName("a");
+			for (var i = 0; i < options.length; i++) {
+				options[i].onclick = closeFilter;
+			}
+
+			filter.getElementsByClassName("close-overlay")[0].onclick = closeFilter;
+		}
+
+
+		function closeSortBy() {
+		    var sort = document.getElementById("sort-type");
+		    closeoOverlay(sort);
+		    sort.getElementsByTagName("select")[0].size = "1";
+		}
+
+		function openSortBy() {
+			
+			var sort = document.getElementById("sort-type");
+			openOverlay(sort);
+
+			var options = sort.getElementsByTagName("option");
+			for (var i = 0; i < options.length; i++) {
+				options[i].onclick = closeSortBy;
+			}
+
+			sort.getElementsByClassName("close-overlay")[0].onclick = closeSortBy;
+
+			sort.getElementsByTagName("select")[0].size = "10";
+		}
+
+		document.getElementById("open-filter").onclick = openFilter;
+		document.getElementById("open-sort-by").onclick = openSortBy;
+
+	</script>
+
+</body>
+</html>
