@@ -55,11 +55,11 @@ slider .item .item-wrapper:hover {
     vertical-align: middle;
 }
 
-#custom-owl .owl-prev {
+.custom-owl .owl-prev {
     left: -20px;
 }
 
-#custom-owl .owl-next {
+.custom-owl .owl-next {
     right: -20px;
 }
 
@@ -68,11 +68,11 @@ slider .item .item-wrapper:hover {
         width: 100%;
     }
 
-    #custom-owl .owl-prev {
+    .custom-owl .owl-prev {
         left: 0px;
     }
 
-    #custom-owl .owl-next {
+    .custom-owl .owl-next {
         right: 0px;
     }
 }

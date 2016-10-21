@@ -15,7 +15,7 @@
 
   <body>
       <div class="slider">
-        <div id="custom-owl" class="owl-carousel grid-view">
+        <div class="owl-carousel grid-view custom-owl">
 
           <div class="item">
             <div class="item-wrapper">
@@ -241,13 +241,15 @@
 
     <script>
     $(document).ready(function() {
-      var owl = $("#custom-owl");
+      var owl = $(".custom-owl");
 
       owl.owlCarousel({
+          autoplay: 10,
           loop:true,
           margin: 10,
           nav: true,
           navText: ['<span>&#139;</span>','&#155;'],
+          stopOnHover: true,
           responsive:{
               0:{
                   items:1
