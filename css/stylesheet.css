@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+br{
+	clear:both;
+}
+hr{
+	clear:both;
+}
+
+.anh{
+	border: #920001 1px solid;
+	cursor: pointer;
+	
+	margin-bottom: 10px;
+}
+.bt{
+	margin-left: 30px;
+}
+.fb{
+	width:90px;
+	float:left;
+}
+.gt{
+	margin-left: 30px;
+}
+.share  .btn-default{
+	background:#3b5998; 
+	width:90px;
+	height: 35px;
+}
+
+.icon{
+	width:20px; 
+	height: 20px;
+
+
+}
+.img {
+	  float: left;
+	  margin: 10px;
+	  padding: 5px;
+}	
+.price {
+	  text-align: center;
+}
+
+.giaban{
+ 	  font-size:20px;
+ 	  color: #04B404;
+ 	  display:inline;
+}
+
+.row2{
+	
+	padding: 10px;
+	border: 1px ridge;
+	margin-top:10px;
+}
+.row2 .btn-block{
+	background: #0404B4;
+	margin-right: 10px;
+	margin-top: 10px; 
+}
+.row3{
+	background-color: #FAFAFA;
+	border:1px ridge ;
+	padding:1px;
+	margin-top:20px;
+	color: white;
+	text-align: center;
+}
+.row3 button{
+	margin-top:3px;
+
+}
+.row3 span{
+	color: white;
+	margin: center;
+	margin-right: 30px;
+}
+strong{
+	font-size: 20px;
+}
+ a:hover{
+	cursor: pointer;
+	
+}
+.cm{
+	color:#04B404;
+	font-size: 17px;
+}
+.row5{
+	color: white;
+	margin-top:20px;
+}
+.anhdaidien{
+	margin-bottom: 10px;
+}
+
+}
+.form-group{
+	width:100px;		
+}
+.form-group button{
+ width: 250px;
+}
+.khuyen_mai{
+
+}
+
+.anhdaidien1 {
+	width: 120px;
+	height: 110px;
+}
+.anhdaidien2{
+	width: 70px;
+	height: 60px;
+}
+@media all and (max-width: 610px) {
+	.anhdaidien1 {
+	width: 100px;
+	height: 90px;
+	}
+	.anhdaidien2{
+		width:70px;
+		height: 60px;
+	}
+	.row11 textarea {
+	width: 600px;
+	height: 90px;
+	}
+
+}
+
+@media all and (max-width: 610px) {
+	.anhdaidien1 {
+	width: auto;
+	height: 70px;
+	}
+	.anhdaidien2{
+		width:40px;
+		height: auto;
+	}
+	.row11 textarea {
+	width: 100%;
+	height: 70px;
+}
+.spagination{
+	margin:center;
+}
+footer{
+	padding-top: 20px;
+}
