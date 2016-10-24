@@ -86,7 +86,7 @@
 
 
 /*main nav*/
-.nav-pills > li.active > a,.nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+/*.nav-pills > li.active > a,.nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
 	background: none;
 }
 .main-navbar{
@@ -123,18 +123,18 @@
 	font-weight: normal;
 	padding: 5px 10px;
 }
+*/
 
-
-.dropdown-menu li a{
+/*.dropdown-menu li a{
 	display: block;
 	color: #000;
 	padding:0px;
 	margin:0px;
-	border-top: none;
-	border-bottom: 5px solid #1E1E21;
+	border-top: none;*/
+	/*border-bottom: 5px solid #1E1E21;*/
 
-	/*background-color: red;*/
-}
+	
+/*}*/
 /*Dùng để  chỉnh vị trí cho navbar khi scroll*/
 
  .affix ~ .container-fluid {
@@ -158,12 +158,15 @@
   }
 
 
-.dropdown-menu li:hover a{
+/*.dropdown-menu li:hover a{
 	display: block;
 	color: red;
-}
+}*/
 
 /*slider*/
+.slider-demo{
+	margin-top: 300px;
+}
 
 /*content*/
 
@@ -262,10 +265,6 @@ h3.box-title{
 	text-align: center;
 	border-radius: 2px solid black;
 	text-decoration: none;
-}
-.btn-cart{
-	border: 1px solid;
-	padding: 5px;
 }
 
 /*PTuan*/
@@ -424,4 +423,89 @@ h3.box-title{
 .language a:hover {
 	color: #599bff;
 	text-decoration: none;
+}
+
+
+
+
+
+/*navbar*/
+.navbar{
+	/*position: fixed;*/
+	/*top: 0px;*/
+	/*background-color: #1E1E21;*/
+	/*color: white;*/
+	font-color:white;
+}
+.navbar-brand { 
+  width: 70px;
+  height: 50px;
+  background: url('http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png') no-repeat center center;
+  background-size: 50px;  
+  position: fixed;
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.nav-tabs > li > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus, 
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-list { border-bottom: 1px solid #eee; }
+.nav-list > li { 
+  padding: 20px 15px 15px;
+  border-left: 1px solid #eee; 
+}
+.nav-list > li:last-child { border-right: 1px solid #eee; }
+.nav-list > li > a:hover { text-decoration: none; }
+.nav-list > li > a > span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mega-dropdown { position: static !important; }
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/*imgage*/
+
+.img-header{
+	width:100px;
+	height: 150px;
+}
+
+
+
+/*search*/
+#imaginary_container{
+	margin-top: 10px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+
 }

@@ -1,201 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Panda Book</title>
-	<link rel="icon" type="img/png" href="img/icon-title.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styleShop.css">
-	<link rel="stylesheet" href="css/login.css">
-	    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/search.css">
-    <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panda Book</title>
+  <link rel="icon" type="img/png" href="img/icon-title.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styleShop.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/search.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 <body>
 
-	<header>
-		<div class="top-bar">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="pull-right">
-							
-								<ul class="list-unstyled top-links">
-				
-									<li>
-										<a href="#" onclick="document.getElementById('idlogin').style.display='block';
-										document.getElementById('idmodal').style.display='block'">Đăng nhập</a>
-									</li>
-									<li><a href="#" onclick="document.getElementById('idregister').style.display='block';
-															document.getElementById('idmodal').style.display='block'">
-											Đăng ký
-										</a>
-									</li>
+<nav class="navbar navbar-default affix" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
 
-								</ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="forum.html">Diễn đàn</a></li>
+        <li class="dropdown mega-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Danh mục<span class="caret"></span></a>       
+        <div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+                <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="kinhTe">
+                            <ul class="nav-list list-inline">
+                                <li><a href="#"><img class="img-header" src="img/khoi nghiep thong minh.jpg"><span>Khởi nghiệp</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Makerting ban hang.jpg"><span>Makerting</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Lot tran ceo.jpg"><span>Lãnh đạo</span></a></li>
+                                <li><a href="#"><img  class="img-header" src="img/Nghệ thuật lấy lòng khách hàng.jpg"><span>Kỹ năng làm việc</span></a></li>
+                                <li><a href="#"><img  class="img-header"  src="img/Quản lí.jpg"><span>Kiến thức kinh tế</span></a></li>
+                                <li><a href="#"><img  class="img-header" src="img/1000 lời khuyên đầu tư bđộng sản.jpg"><span>Nhân vật</span></a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="teen">
+                            <ul class="nav-list list-inline">
+                                <li><a href="#"><img class="img-header"  src="img/Tâm lý tuổi teen.jpg"><span>Tâm lý</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Hướng nghiệp.jpg"><span>Hướng nghiệp</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Văn học teen.jpg"><span>Văn học teen</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Kiến thức kĩ năng.jpg"><span>Kiến thức kĩ năng</span></a></li>                                
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="vanHoc">
+                            <ul class="nav-list list-inline">
+                                <li><a href="#"><img class="img-header"  src="img/Trăng du đãng.jpg"><span>Thơ</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Luật sư và bị cáo.jpg"><span>Trinh thám</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Truyện ngắn.jpg"><span>Truyện ngắn</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/99 chuyện hài hước của bệnh nhân và bác sĩ.jpg"><span>Hài hước</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Tâm lý.jpg"><span>Tâm lý</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Giả tưởng.jpg"><span>Giả tưởng</span></a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="uet">
+                            <ul class="nav-list list-inline">                                
+                                <li><a href="#"><img class="img-header"  src="img/1.jpg"><span>C++</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/2.jpg"><span>PHP</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/4.jpg"><span>Java</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/python.jpg"><span>Python</span></a></li>
+                                <li><a href="#"><img class="img-header"  src="img/Javascript.jpg"><span>Javascript</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#kinhTe" role="tab" data-toggle="tab">Kinh tế</a></li>
+                       <li><a href="#teen" role="tab" data-toggle="tab">Sách tuổi teen</a></li>
+                       <li><a href="#vanHoc" role="tab" data-toggle="tab">Văn học</a></li>
+                       <li><a href="#uet" role="tab" data-toggle="tab">Sách UET</a></li>
+                    </ul>                    
+        </div>        
+      </li>
+        </ul>
+        
+        <div class="col-sm-5">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Search" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+            </div>
+        </div>
+  <!-- </div> -->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" onclick="document.getElementById('idregister').style.display='block';
+                  document.getElementById('idmodal').style.display='block'">Đăng ký</a></li>
+            <li><a href="#" onclick="document.getElementById('idlogin').style.display='block';
+                  document.getElementById('idmodal').style.display='block'">Đăng nhập</a></li>
+            <li><a href="cart.html">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                </a></li>
+        </ul>
 
 
+        <!-- form login register-->
+        <div id="idmodal" class="modal1">
+      <form id="idlogin" class="modal1-content animate" style="display: none;">
+        <div class="title-login">Đăng Nhập</div>
+        <input class="input-login" type="text" name="uname" placeholder="Email" required>
+        <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+        <a class="link-forgot-psw" href="">Quên mật khẩu?</a>
+        <button class="btn-login">Đăng Nhập</button>
+        <div class=text-register>
+          Bạn chưa có tài khoản? 
+          <a href="#" onclick="document.getElementById('idlogin').style.display='none';
+          document.getElementById('idregister').style.display='block'">Đăng ký</a>
+        </div>
+      </form>
+      <form id="idregister" class="modal1-content animate" style="display: none;">
+        <div class="title-login">Đăng Ký Tài Khoản</div>
+        <input class="input-login" type="text" name="uname" placeholder="Email" required>
+        <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+        <input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
+        <div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+          <a href="">điều kiện sử dụng của Panda Book.</a>
+        </div>
+        <button class="btn-login">Đăng Ký</button>
+      </form>
+    </div> <!-- end login -->
 
-							<div id="idmodal" class="modal1">
-								<form id="idlogin" class="modal1-content animate" style="display: none;">
-									<div class="title-login">Đăng Nhập</div>
-									<input class="input-login" type="text" name="uname" placeholder="Email" required>
-									<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
-									<a class="link-forgot-psw" href="">Quên mật khẩu?</a>
-									<button class="btn-login">Đăng Nhập</button>
-									<div class=text-register>
-										Bạn chưa có tài khoản? 
-										<a href="#" onclick="document.getElementById('idlogin').style.display='none';
-										document.getElementById('idregister').style.display='block'">Đăng ký</a>
-									</div>
-								</form>
-								<form id="idregister" class="modal1-content animate" style="display: none;">
-									<div class="title-login">Đăng Ký Tài Khoản</div>
-									<input class="input-login" type="text" name="uname" placeholder="Email" required>
-									<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
-									<input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
-									<div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
-										<a href="">điều kiện sử dụng của Panda Book.</a>
-									</div>
-									<button class="btn-login">Đăng Ký</button>
-								</form>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> <!-- end .top-bar-->
-		
-		<div class="main-header">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-sm-4 ">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search for...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-								</span>
-							</div><!-- /input-group -->
-					</div>
 
-					<div class="col-sm-4 ">
-						<div class="logo text-center">
-							<div><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-						</div>
-					</div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-					<div class="col-sm-4">
-						<div class="pull-right">
-								<div class="pull-right">
-			                  <a href="cart.html" class="btn-cart">
-			                  <span>1 sản phẩm</span>
-			                    <i class="glyphicon glyphicon-shopping-cart"></i>
-			                  </a>
-			                  <span>&nbsp;&nbsp;</span>
-			                  <a href="#" class="btn-cart">
-			                  <span>1 đánh giá</span>
-			                    <i class="glyphicon glyphicon-heart"></i>
-			                  </a>
-			            	</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- end .main-header-->
+<section>
+    <div id="slider-demo" class="carousel slide" data-ride="carousel">
+       <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#slider-demo" data-slide-to="0" class="active"></li>
+          <li data-target="#slider-demo" data-slide-to="1"></li>
+          <li data-target="#slider-demo" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+        <div class="carousel-inner" >
+          <div class="item active">
+              <img src="img/banner1.jpg" class="banner img-responsive" alt="002">
+              <div class="carousel-caption">
+                
+              </div>
+          </div>
+          <div class="item">
+          <img src="img/banner2.jpg" class="banner img-responsive" alt="003">
+          <div class="carousel-caption">
 
-		<div class="main-navbar">
-			<div class="container">
-				<div class="row">
-					 <ul class="nav nav-pills" data-spy="affix" data-offset-top="197">
-				        <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
-				        <li><a href="#">Diễn đàn</a></li>
-				        <li><a href="#">Tin tức</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				          Sách UET
-				          <span ></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Công nghệ thông tin</a></li>
-				            <li><a href="#">Điện tử viễn thông</a></li>
-				            <!-- <li><a href="#">Khác</a></li> -->
-				            <!-- <li role="separator" class="divider"></li> -->
-				            <li><a href="#">An toàn thông tin</a></li>
-				            <!-- <li role="separator" class="divider"></li> -->
-				            <!-- <li><a href="#">Cơ kỹ thuật</a></li> -->
-				          </ul>
-				        </li>
-				         <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				          Sách ngoái
-				          <span ></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Sách kỹ năng</a></li>
-				            <li><a href="#">Sách thiếu nhi</a></li>
-				            <!-- <li><a href="#">Khác</a></li> -->
-				            <!-- <li role="separator" class="divider"></li> -->
-				            <li><a href="#">Sách tâm lý</a></li>
-				            <!-- <li role="separator" class="divider"></li> -->
-				            <!-- <li><a href="#">Sách dạy con</a></li> -->
-				          </ul>
-				        </li>
-				      </ul>
-				</div>
-			</div>
-		</div> <!--end .main-navbar-->
-	</header><!-- /header-->
-
-	<!-- slider home -->
-	<section>
-		<div id="slider-demo" class="carousel slide" data-ride="carousel">
-		   <!-- Indicators -->
-			<ol class="carousel-indicators">
-		    	<li data-target="#slider-demo" data-slide-to="0" class="active"></li>
-		    	<li data-target="#slider-demo" data-slide-to="1"></li>
-		    	<li data-target="#slider-demo" data-slide-to="2"></li>
-			</ol>
-			<!-- Wrapper for slides -->
-		  	<div class="carousel-inner" >
-		    	<div class="item active">
-			        <img src="img/banner1.jpg" class="banner" alt="002">
-			        <div class="carousel-caption">
-			        	
-			        </div>
-		    	</div>
-		    	<div class="item">
-					<img src="img/banner2.jpg" class="banner" alt="003">
-					<div class="carousel-caption">
-
-					</div>
-		    	</div>
-		    	<div class="item">
-		        	<img src="img/banner3.png" class="banner" alt="003">
-		        	<div class="carousel-caption">
-		            
-		        	</div>
-		    	</div>
-		   </div>
-		   <!-- Controls -->
-		   <a class="left carousel-control" href="#slider-demo" role="button" data-slide="prev">
-		   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		   <span class="sr-only">Previous</span>
-		   </a>
-		   <a class="right carousel-control" href="#slider-demo" role="button" data-slide="next">
-		   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		   <span class="sr-only">Next</span>
-		   </a>
-		</div>
-	</section><!--end slider-->
-
-	</div>
-
-	<!--best book-->
-	<div class="slider">
-		<h2><strong>Sách đọc nhiều</strong></h2>
+          </div>
+          </div>
+          <div class="item">
+              <img src="img/banner3.png" class="banner img-responsive" alt="003">
+              <div class="carousel-caption">
+                
+              </div>
+          </div>
+       </div>
+       <!-- Controls -->
+       <a class="left carousel-control" href="#slider-demo" role="button" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#slider-demo" role="button" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+       <span class="sr-only">Next</span>
+       </a>
+    </div>
+  </section><!--end slider-->
+<div class="slider">
+    <h2><strong>Sách đọc nhiều</strong></h2>
         <div class="owl-carousel grid-view custom-owl">
 
           <div class="item">
@@ -211,10 +201,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-96%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-96%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -241,10 +231,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-69%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-69%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -270,10 +260,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-19%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-19%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -297,8 +287,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -322,8 +312,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -347,9 +337,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -374,9 +364,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -400,8 +390,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -416,8 +406,8 @@
       </div> <!-- end best book-->
 
     <!--sale book-->
-	<div class="slider">
-		<h2><strong>Sách giảm giá</strong></h2>
+  <div class="slider">
+    <h2><strong>Sách giảm giá</strong></h2>
         <div class="owl-carousel grid-view custom-owl">
 
           <div class="item">
@@ -433,10 +423,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-96%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-96%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -463,10 +453,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-69%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-69%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -492,10 +482,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-19%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-19%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -519,8 +509,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -544,8 +534,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -569,9 +559,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -596,9 +586,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -622,8 +612,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -638,8 +628,8 @@
       </div> <!-- end sale book-->
 
     <!--new book-->
-	<div class="slider">
-		<h2><strong>Sách mới & nổi bật</strong></h2>
+  <div class="slider">
+    <h2><strong>Sách mới & nổi bật</strong></h2>
         <div class="owl-carousel grid-view custom-owl">
 
           <div class="item">
@@ -655,10 +645,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-96%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-96%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -685,10 +675,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-69%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-69%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
 
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
@@ -714,10 +704,10 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							<span class="discount hidden-grid" title="Giảm giá">-19%</span>
-    							<span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  <span class="discount hidden-grid" title="Giảm giá">-19%</span>
+                  <span class="original-price" title="Giá cũ">72.000<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -741,8 +731,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -766,8 +756,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span>  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -791,9 +781,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -818,9 +808,9 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    							
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                  
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -844,8 +834,8 @@
                 <p class="author" title="Tác giả">Tony Buổi Sáng</p>
                 
                 <div class="price">
-    							<span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
-    						</div>
+                  <span class="real-price" title="Giá bán">57.600<sup>đ<sup></span> 
+                </div>
                 <p class="description hidden-mb">Đọc Cà phê cùng Tony, độc giả không thể cười lớn như khi đọc những mẩu chuyện cười, họ chỉ có  thể tủm tỉm với những triết lí dí dỏm mà TnBS mang đến... <a href="#" class="see-more">Xem thêm</a> </p>
                 
                 <div class="s-add-to-cart">
@@ -859,89 +849,90 @@
         </div>  
       </div> <!-- end new book-->
 
-	<footer class="footer">
-			<div class="footer-wrapper">
-				<div class="footer-widgets">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="widget">
-									<h4 class="widget-title">THÔNG TIN VỀ PANDABOOK</h4>
-									<div class="widget-content">
-										<p>Panda book là sản phẩm của nhóm panda</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="widget">
-									<h4 class="widget-title">HỖ TRỢ</h4>
-									<div class="widget-content">
-										<p>Địa chỉ: Số 144 - Xuân Thủy - Cầu Giấy - Hà nội</p>
-										<p>SĐT: 0969 699 9</p>
-										<p>Email: panda@panda.com</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="widget">
-									<h4 class="widget-title">FANPAGE</h4>
-									<ul class="list-socials">
-		                                    <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a>
-		                                    </li>
-		                            </ul>
-		                        </div>
-		                        <div class="widget">
-									<h4 class="widget-title">CHẤP NHẬN THANH TOÁN</h4>
-									<ul class="list-socials">
-		                                    <li><a href="#" title=""><i class="fa fa-cc-paypal"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-cc-visa"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-cc-jcb"></i></a>
-		                                    </li>
-		                                    <li><a href="#" title=""><i class="fa fa-cc-discover"></i></a>
-		                                    </li>
-		                            </ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> <!-- /.footer-widget -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">THÔNG TIN VỀ PANDABOOK</h4>
+                <div class="widget-content">
+                  <p>Panda book là sản phẩm của nhóm panda do trưởng nhóm là Nguyễn Bá Tú thành lập</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">HỖ TRỢ</h4>
+                <div class="widget-content">
+                  <p>Địa chỉ: Số 144 - Xuân Thủy - Cầu Giấy - Hà nội</p>
+                  <p>SĐT: 096 470 05 02</p>
+                  <p>Email: batu4404@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">FANPAGE</h4>
+                <ul class="list-socials">
+                                        <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                <h4 class="widget-title">CHẤP NHẬN THANH TOÁN</h4>
+                <ul class="list-socials">
+                                        <li><a href="#" title=""><i class="fa fa-cc-paypal"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-visa"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-jcb"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-discover"></i></a>
+                                        </li>
+                                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.footer-widget -->
 
-				<div class="footer-copyright">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-10 copyright">
-		                        <span>Copyright &copy; 2016 Panda Book - All Rights Reserved.</span>
-		                    </div>
-		                    <div class="col-sm-2 language dropup">
-		                    	<span>Language: </span>
-		                    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">VN <span class="caret"></span></a>
-				          		<ul class="dropdown-menu drop-menu">
-				            		<li><a href="#">English</a></li>
-									<li><a href="#">Vietnamese</a></li>
-				            		<li><a href="#">Japaniese</a></li>
-				          		</ul>
-		                    </div>
-		                </div>
-					</div>
-				</div> <!-- /.footer-copyright -->
-				
-			</div> <!-- /.footer-wrapper -->
-			
-		</footer> <!-- /footer -->
-
-
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/scriptShop.js"></script>
-
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 copyright">
+                          <span>Copyright &copy; 2016 Panda Book - All Rights Reserved.</span>
+                      </div>
+                      <div class="col-sm-2 language dropup">
+                        <span>Language: </span>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VN <span class="caret"></span></a>
+                    <ul class="dropdown-menu drop-menu">
+                      <li><a href="#">English</a></li>
+                <li><a href="#">Vietnamese</a></li>
+                      <li><a href="#">Japaniese</a></li>
+                    </ul>
+                      </div>
+                    </div>
+        </div>
+      </div> <!-- /.footer-copyright -->
+      
+    </div> <!-- /.footer-wrapper -->
+    
+  </footer> <!-- /footer -->
+ 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/scriptShop.js"></script>
 </body>
 </html>
+
+
+
