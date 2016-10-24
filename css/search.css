@@ -95,6 +95,7 @@ p {
 	background-color: #999;
     color: #fff;
     cursor: default;
+    pointer-events: none;
 }
 
 .pd-pagination li a:hover {
@@ -177,7 +178,7 @@ p {
 	right: 20px;
 	bottom: 10px;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	background-color: #FF7722;
 	border-radius: 2px;
 	padding: 5px;
@@ -277,6 +278,7 @@ p {
 
 .pages {
 	margin-top: 20px;
+	pa
 }
 
 /* filter */
@@ -385,7 +387,6 @@ p {
 }
 
 .grid-view .item-wrapper .img-res {
-	padding-top: 20px;
 	width: 100%;
 //	height: 250px;
 	display: table;
@@ -534,7 +535,7 @@ p {
 	}
 
 	.search-info {
-		margin-left: 2em;
+		margin: auto 1.5em;
 	}
 
 	.sort-type .btn {
@@ -556,6 +557,15 @@ p {
 
 	.hidden-mb {
 		display: none !important;
+	}
+
+	.pd-pagination li a {
+		font-size: 1.1em;
+		padding:  9px;
+	}
+
+	.pd-pagination li:not(.disabled) a {
+		border: 1px solid #000 !important;
 	}
 }
 
