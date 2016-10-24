@@ -69,3 +69,10 @@ slider .item .item-wrapper:hover {
         right: 0px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .slider {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
