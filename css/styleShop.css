@@ -1,6 +1,8 @@
-  body {
-      position: relative;
-  }
+body {
+    position: relative;
+    padding-top: 69px;
+
+}
 .red{
 	background-color: red;
 }
