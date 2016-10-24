@@ -1,3 +1,14 @@
+document.getElementById("keywords-field").onkeypress = function(event) {
+    var keycode = event.keyCode;
+    if (keycode === 13) {
+        window.location.assign('search-grid.html'); 
+    }
+}
+
+document.getElementById("search").onclick = function() {
+    window.location.assign('search-grid.html'); 
+}
+
 $(document).ready(function() {
       var owl = $(".custom-owl");
 
