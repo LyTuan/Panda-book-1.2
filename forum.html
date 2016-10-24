@@ -6,175 +6,154 @@
   <title>Shop</title>
 
   <!-- Khai báo css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="icon" type="img/png" href="img/icon-title.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styleShop.css">
-  <link rel="stylesheet" href="css/forum.css">
   <link rel="stylesheet" href="css/login.css">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/search.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <link rel="stylesheet" href="css/forum.css">
 
 </head>
 <body >
   <header>
-    <div class="top-bar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="pull-left">
-              <div class="lang">
-                <!-- Single button -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    English <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">                    
-                    <li><a href="#">Viet Nam</a></li>
-                    <li><a href="#">Japanese</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="pull-right">
-              
-                <ul class="list-unstyled top-links">
-                  <li><a href="#">Tài khoản</a></li>
-                  <!-- <li><a href="#">Wishlist</a></li> -->
-                  <li><a href="#" onclick="document.getElementById('idlogin').style.display='block';
-                              document.getElementById('idmodal').style.display='block'">
-                      Đăng nhập
-                    </a>
-                  </li>
-                  <li><a href="#" onclick="document.getElementById('idregister').style.display='block';
-                              document.getElementById('idmodal').style.display='block'">
-                      Đăng ký
-                    </a>
-                  </li>
-                </ul>
-              
-            </div>
-          </div>
-        </div>
+  <nav class="navbar navbar-default affix" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
       </div>
-    </div> <!-- end .top-bar-->
-    
-    <div class="main-header">
-      <div class="container">
-        <div class="row">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+          <ul class="nav navbar-nav">
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="forum.html">Diễn đàn</a></li>
+          <li class="dropdown mega-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Danh mục<span class="caret"></span></a>       
+          <div class="dropdown-menu mega-dropdown-menu">
+                      <div class="container-fluid">
+                  <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="kinhTe">
+                              <ul class="nav-list list-inline">
+                                  <li><a href="#"><img class="img-header" src="img/khoi nghiep thong minh.jpg"><span>Khởi nghiệp</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Makerting ban hang.jpg"><span>Makerting</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Lot tran ceo.jpg"><span>Lãnh đạo</span></a></li>
+                                  <li><a href="#"><img  class="img-header" src="img/Nghệ thuật lấy lòng khách hàng.jpg"><span>Kỹ năng làm việc</span></a></li>
+                                  <li><a href="#"><img  class="img-header"  src="img/Quản lí.jpg"><span>Kiến thức kinh tế</span></a></li>
+                                  <li><a href="#"><img  class="img-header" src="img/1000 lời khuyên đầu tư bđộng sản.jpg"><span>Nhân vật</span></a></li>
+                              </ul>
+                            </div>
+                            <div class="tab-pane" id="teen">
+                              <ul class="nav-list list-inline">
+                                  <li><a href="#"><img class="img-header"  src="img/Tâm lý tuổi teen.jpg"><span>Tâm lý</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Hướng nghiệp.jpg"><span>Hướng nghiệp</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Văn học teen.jpg"><span>Văn học teen</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Kiến thức kĩ năng.jpg"><span>Kiến thức kĩ năng</span></a></li>                                
+                              </ul>
+                            </div>
+                            <div class="tab-pane" id="vanHoc">
+                              <ul class="nav-list list-inline">
+                                  <li><a href="#"><img class="img-header"  src="img/Trăng du đãng.jpg"><span>Thơ</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Luật sư và bị cáo.jpg"><span>Trinh thám</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Truyện ngắn.jpg"><span>Truyện ngắn</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/99 chuyện hài hước của bệnh nhân và bác sĩ.jpg"><span>Hài hước</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Tâm lý.jpg"><span>Tâm lý</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Giả tưởng.jpg"><span>Giả tưởng</span></a></li>
+                              </ul>
+                            </div>
+                            <div class="tab-pane" id="uet">
+                              <ul class="nav-list list-inline">                                
+                                  <li><a href="#"><img class="img-header"  src="img/1.jpg"><span>C++</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/2.jpg"><span>PHP</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/4.jpg"><span>Java</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/python.jpg"><span>Python</span></a></li>
+                                  <li><a href="#"><img class="img-header"  src="img/Javascript.jpg"><span>Javascript</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                         <li class="active"><a href="#kinhTe" role="tab" data-toggle="tab">Kinh tế</a></li>
+                         <li><a href="#teen" role="tab" data-toggle="tab">Sách tuổi teen</a></li>
+                         <li><a href="#vanHoc" role="tab" data-toggle="tab">Văn học</a></li>
+                         <li><a href="#uet" role="tab" data-toggle="tab">Sách UET</a></li>
+                      </ul>                    
+          </div>        
+        </li>
+          </ul>
           
-          <div class="col-sm-4 ">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button" onclick="window.location.href='search1.html'"><i class="glyphicon glyphicon-search"></i></button>
-                </span>
-              </div><!-- /input-group -->
-          </div>
-
-          <div class="col-sm-4 ">
-            <div class="logo text-center">
-              <div><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="pull-right">
-                        <a href="cart.html" class="btn-cart">
-                          <i class="glyphicon glyphicon-shopping-cart"></i>
-                        </a>
-                        <span>&nbsp;&nbsp;</span>
-                        <a href="#" class="btn-cart">
-                          <i class="glyphicon glyphicon-heart"></i>
-                        </a>
+          <div class="col-sm-5">
+              <div id="imaginary_container"> 
+                  <div class="input-group stylish-input-group">
+                      <input type="text" class="form-control"  placeholder="Search" >
+                      <span class="input-group-addon">
+                          <button type="submit">
+                              <span class="glyphicon glyphicon-search"></span>
+                          </button>  
+                      </span>
                   </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </div><!-- end .main-header-->
+    <!-- </div> -->
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" onclick="document.getElementById('idregister').style.display='block';
+                    document.getElementById('idmodal').style.display='block'">Đăng ký</a></li>
+              <li><a href="#" onclick="document.getElementById('idlogin').style.display='block';
+                    document.getElementById('idmodal').style.display='block'">Đăng nhập</a></li>
+              <li><a href="cart.html">
+                      <i class="glyphicon glyphicon-shopping-cart"></i>
+                  </a></li>
+          </ul>
 
-    <div class="main-navbar">
-      <div class="container">
-        <div class="row">
-           <ul class="nav nav-pills" data-spy="affix" data-offset-top="197">
-                <li class="active"><a href="shop.html"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
-                <li><a href="forum.html">Diễn đàn</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Sách UET
-                  <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Công nghệ thông tin</a></li>
-                    <li><a href="#">Điện tử viễn thông</a></li>
-                    <!-- <li><a href="#">Khác</a></li> -->
-                    <!-- <li role="separator" class="divider"></li> -->
-                    <li><a href="#">An toàn thông tin</a></li>
-                    <!-- <li role="separator" class="divider"></li> -->
-                    <!-- <li><a href="#">Cơ kỹ thuật</a></li> -->
-                  </ul>
-                </li>
-                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Sách ngoái
-                  <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Sách kỹ năng</a></li>
-                    <li><a href="#">Sách thiếu nhi</a></li>
-                    <!-- <li><a href="#">Khác</a></li> -->
-                    <!-- <li role="separator" class="divider"></li> -->
-                    <li><a href="#">Sách tâm lý</a></li>
-                    <!-- <li role="separator" class="divider"></li> -->
-                    <!-- <li><a href="#">Sách dạy con</a></li> -->
-                  </ul>
-                </li>
-              </ul>
-        </div>
-      </div>
-    </div> <!--end .main-navbar-->
-  </header><!-- /header-->
 
-  <!--Login, Register-->
-  <div id="idmodal" class="modal">
-    <form id="idlogin" class="modal-content animate" style="display: none;">
-      <div class="title-login">Đăng Nhập</div>
-      <input class="input-login" type="text" name="uname" placeholder="Email" required>
-      <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
-      <a class="link-forgot-psw" href="">Quên mật khẩu?</a>
-      <button class="btn-login">Đăng Nhập</button>
-      <div class=text-register>
-        Bạn chưa có tài khoản? 
-        <a href="#" onclick="document.getElementById('idlogin').style.display='none';
-                  document.getElementById('idregister').style.display='block'">
-        Đăng ký</a>
-      </div>
-    </form>
-    <form id="idregister" class="modal-content animate" style="display: none;">
-      <div class="title-login">Đăng Ký Tài Khoản</div>
-      <input class="input-login" type="text" name="uname" placeholder="Email" required>
-      <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
-      <input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
-      <div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
-        <a href="">điều kiện sử dụng của Panda Book.</a>
-      </div>
-      <button class="btn-login">Đăng Ký</button>
-    </form>
-  </div>
+          <!-- form login register-->
+          <div id="idmodal" class="modal1">
+        <form id="idlogin" class="modal1-content animate" style="display: none;">
+          <div class="title-login">Đăng Nhập</div>
+          <input class="input-login" type="text" name="uname" placeholder="Email" required>
+          <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+          <a class="link-forgot-psw" href="">Quên mật khẩu?</a>
+          <button class="btn-login">Đăng Nhập</button>
+          <div class=text-register>
+            Bạn chưa có tài khoản? 
+            <a href="#" onclick="document.getElementById('idlogin').style.display='none';
+            document.getElementById('idregister').style.display='block'">Đăng ký</a>
+          </div>
+        </form>
+        <form id="idregister" class="modal1-content animate" style="display: none;">
+          <div class="title-login">Đăng Ký Tài Khoản</div>
+          <input class="input-login" type="text" name="uname" placeholder="Email" required>
+          <input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+          <input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
+          <div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+            <a href="">điều kiện sử dụng của Panda Book.</a>
+          </div>
+          <button class="btn-login">Đăng Ký</button>
+        </form>
+      </div> <!-- end login -->
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById('idmodal');
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-            document.getElementById('idlogin').style.display='none';
-            document.getElementById('idregister').style.display='none';
-        }
-    }
-  </script>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header> <!-- end header-->
 
 
  <div class="container content">
+ <br>
+ <br>
+ <br>
       <div class="row">
         <div class="col-sm-8 primary">
           <h1>Diễn đàn trao đổi về sách</h1>
@@ -185,7 +164,7 @@
             <i class="glyphicon glyphicon-time"></i> Posted at 19h00 27/09/2016
           </p>
           <hr>
-          <img src="img/Đừng đợi đến khi tốt nghiệp đại học.jpg" class="img-responsive" alt="p1">
+          <img src="img/qgkn.jpg" class="img-responsive" alt="p1">
 
         <hr>
           <h3>Đổi sách Quốc Gia khởi nghiệp</h3>
@@ -208,7 +187,7 @@
              <div class="media">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object avatar" src="img/Lý Tuấn avatar.jpg " alt="avatar">
+                  <img class="media-object avatar" src="img/11159980_327367040743587_6912539481363987372_n.jpg" alt="avatar">
                 </a>
               </div>
               <div class="media-body">
@@ -220,7 +199,7 @@
                <div class="media">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object avatar" src="img/Trung avatar.jpg" alt="avatar">
+                  <img class="media-object avatar" src="img/11259713_465829333618555_7885064366996020056_n.jpg" alt="avatar">
                 </a>
               </div>
               <div class="media-body">
@@ -231,7 +210,7 @@
                  <div class="media">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object avatar" src="img/Tranh nguyễn avatar.jpg" alt="avatar">
+                  <img class="media-object avatar" src="img/13043253_597990580358444_6351490768492377670_n.jpg" alt="avatar">
                 </a>
               </div>
               <div class="media-body">
@@ -284,138 +263,99 @@
 
           </div>
            <div class="well">
-              <h4> Nội quy của Diễn đàn</h3>
+              <h4> Nội quy của Diễn đàn</h4>
               <p>Là nơi trao đổi sách mới, sách cũ, bàn luận về sách, chia sẻ sách. Nghiêm cấm các bài đăng ngoài lề trái đạo đức, pháp luật, kinh doanh, tuyển dụng.</p>
           </div>
 
         </div>
       </div>
+
   <hr>
+  </div>
 
-  <footer >
-    <div class="footer-custom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="title">
-              <h3>ABOUT US</h3>
-              <div class="line"></div>  
-            </div>
-            <div class="content">
-              <p>Chúng tớ học K59CLC</p>
-              <p>Chúng tớ là con trai</p>
-              <p>Đây là bài tập lớn của chúng tớ</p>
-            </div>
-            
-          </div>
-          <div class="col-sm-3">
-            <div class="title">
-              <h3>CONTACT US</h3>
-              <div class="line"></div>  
-            </div>
-            <div class="content">
-              <div class="item">
-                <div class="icon inlineFooter">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                </div>
-                <div class="info">
-                  Số 144 Xuân Thủy Cầu Giấy Hà nội
-                </div>  
-              </div>
-              <div class="item">
-                <div class="icon inlineFooter">
-                  <i class="glyphicon glyphicon-phone-alt">
-                  </i>
-                </div>
-                <div class="info">
-                  <a href="#">01689700133</a>
-                </div>  
-
-              </div>
-              <div class="item">
-                <div class="icon inlineFooter">
-                  <i class="glyphicon glyphicon-envelope">
-                  </i>
-                </div>
-                <div class="info">
-                  <a href="#">pandabook@gmail.com</a>
-                </div>  
-
-              </div>
-              <div class="item">
-                <div class="icon inlineFooter" >
-                  <i class="glyphicon glyphicon-user">
-                  </i>
-                </div>
-                <div class="info">
-                  <a href="#">panda</a>
-                </div>  
-
-              </div>
-            </div>
-            
-          </div>
-          <div class="col-sm-3">
-            <div class="title">
-              <h3>TWISTER</h3>
-              <div class="line"></div>  
-            </div>
-            <div class="content">
-                <a class="btn btn-block btn-social btn-twitter">
-                    <span class="fa fa-twitter"></span> Follow us on Twitter
-                </a>
-            </div>
-            
-          </div>
-          <div class="col-sm-3">
-            <div class="title">
-              <h3>FACEBOOK</h3>
-              <div class="line"></div>  
-            </div>
-            <div class="content">
-               <a class="btn btn-block btn-social btn-facebook" href="http:www.facebook.com/lytuanqo">
-                  <span class="fa fa-facebook"></span> Follow us on facebook
-              </a>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="footer-links">
-      <div class="container">
-      <hr>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="title">
-              <h3></h3>
-              <div class="line"></div>  
-            </div>
-            <div class="content"></div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-widgets">
         <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <p> &copy; 2016| Theme custom by Panda</p>
-                  
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">THÔNG TIN VỀ PANDABOOK</h4>
+                <div class="widget-content">
+                  <p>Panda book là sản phẩm của nhóm panda do trưởng nhóm là Nguyễn Bá Tú thành lập</p>
+                </div>
               </div>
             </div>
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">HỖ TRỢ</h4>
+                <div class="widget-content">
+                  <p>Địa chỉ: Số 144 - Xuân Thủy - Cầu Giấy - Hà nội</p>
+                  <p>SĐT: 096 470 05 02</p>
+                  <p>Email: batu4404@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">FANPAGE</h4>
+                <ul class="list-socials">
+                                        <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                <h4 class="widget-title">CHẤP NHẬN THANH TOÁN</h4>
+                <ul class="list-socials">
+                                        <li><a href="#" title=""><i class="fa fa-cc-paypal"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-visa"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-jcb"></i></a>
+                                        </li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-discover"></i></a>
+                                        </li>
+                                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </footer>
+      </div> <!-- /.footer-widget -->
 
-
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 copyright">
+                          <span>Copyright &copy; 2016 Panda Book - All Rights Reserved.</span>
+                      </div>
+                      <div class="col-sm-2 language dropup">
+                        <span>Language: </span>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VN <span class="caret"></span></a>
+                    <ul class="dropdown-menu drop-menu">
+                      <li><a href="#">English</a></li>
+                <li><a href="#">Vietnamese</a></li>
+                      <li><a href="#">Japaniese</a></li>
+                    </ul>
+                      </div>
+                    </div>
+        </div>
+      </div> <!-- /.footer-copyright -->
+      
+    </div> <!-- /.footer-wrapper -->
     
-  </section>
+  </footer> <!-- /footer -->
+
+
   <!-- Khai báo script -->
-  <script type="text/javascript" src="js/libraryJQuery.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/scriptShop.js"></script>
 </body>
 </html>
